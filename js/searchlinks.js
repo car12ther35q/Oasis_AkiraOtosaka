@@ -1,4 +1,4 @@
-//Generates all Deafalt links to be searched in an array for the first Time
+//Generates all Weboasis links to be searched in an array for the first Time
 let allLinkSources = [];
 
 for (const property in defaultLinkMenu) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title> Deafalt | Web Oasis | Source Code Changed</title>
+    <title> Weboasis | Source Code Changed</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="title" content="ReapOasis | The Ultimate Startpage, Homepage, Web Portal!">
     <meta name="description" content="Startpage, Homepage, All-in-One Web Portal For Internet & Tech Enthusiasts Who Love Exploring & Learning About The Digital Underground.">
@@ -49,7 +49,6 @@
     <script defer type="application/javascript" src="js/searchlinks.min.js"></script>
     <script defer type="application/javascript" src="js/index_search_links.min.js"></script>
 	<script defer type="application/javascript" src="js/keyscroll.min.js"></script>
-	<script defer type="application/javascript" src="js/suggestions.min.js"></script>
 	<script type="application/javascript" src="alerts/toastify.min.js"></script>
 </head>
 <body id="body" onresize="canvasApp()">
@@ -61,13 +60,11 @@
       <a href="https://coincap.io/">Crypto</a>
       <a href="https://libreddit.dothq.co/r/FREEMEDIAHECKYEAH/wiki/index">⭐r/FMHY's Wiki⭐</a>
       <a href="https://dev-iptv.web.app/">IPTV</a>
-      <a href="Reaper's Stuff/">Reaper's Projects</a>
       <a href="https://stremio-development.netlify.app/">Stremio-Web (Movies torrent)</a>
       <a href="weboasis/index.html">Old Weboasis useful stuff</a>
       <a href="http://radiomii.com/">Radio</a>
-      <a href="https://hn.algolia.com/hot">Tech</a>
-      <a href="weather/">Weather</a>
-      <a href="qr/">QR</a>
+      <a href="https://hn.algolia.com/hot">Real Tech News</a>
+      <a href="./Wracked/messages.html">Wracked (a backup)</a>
         </menu><hr>
         <div id="customcontainer">
             <div id="show-hide-customization">
@@ -99,7 +96,6 @@
             <div id="settingsContainer">
                 <p id="exportSettings" class="btn hollow small">Export</p>
                 <label id="importLabel" for="importSettings" class="btn hollow small">Import</label>
-                <input type="file" id="importSettings" onchange="return importSettings()" />
             </div>
         </div>
         <div id="customMatrix">
@@ -145,47 +141,20 @@
             </div>
             <p id="resetBackgroundBtn" class="btn hollow small reset">Reset Background</p>
         </div>
-        <div class="email">
-			<script type="text/javascript">
-				for(var hyykzs=["cg","Yg","aQ","ZA","YQ","cw","Ig","YQ","bQ","Pg","bA","cw","aQ","QA","bg","Og","bw","PA","Ig","Pg","Lg","aQ","ZQ","ZA","ZQ","YQ","dw","bw","cw","Yg","IA","bQ","dw","Zg","YQ","bw","Lw","aA","aQ","PA","YQ","ZQ","Lg","cw","dA","aQ","bQ","YQ","PQ","YQ","bg","QA"],sdafzz=[4,24,19,17,43,44,8,33,18,51,12,30,29,38,37,15,42,48,31,32,45,11,40,34,23,50,22,14,27,41,2,9,39,6,16,25,49,3,46,0,10,5,28,47,13,36,35,26,7,1,20,21],jqngvb=new Array,i=0;i<sdafzz.length;i++)jqngvb[sdafzz[i]]=hyykzs[i];for(var i=0;i<jqngvb.length;i++)document.write(atob(jqngvb[i]+"=="));
-			</script>
-		</div>
 	</div>
-	<a href="javascript:void(0);" id="customLinksNavOpen" onclick="openCustomLinksNav()">☰</a>
     <div id="custom_links_nav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeCustomLinksNav()">&times;</a>
       <div class="random-link-wrapper" style="text-align: center;padding-bottom: 10px;">
         <p id="random-link" class="btn hollow small" style="padding:10px;margin-top: 0px;">Random Link</p>
-      </div>
-      <h2 style="text-align:center">Custom Links</h2>
-      <p style="text-align:center;padding-bottom: 10px;">Add & Remove Links Here</p>
-      <ul id="userCustomLinks"></ul>
-      <div id="customlinks">
-        <ul id="favorite-links"></ul>
-        <div id="new-link-button">
-          <button id="add-link-btn">Add New Links</button>
-        </div>
       </div>
       <div id="add-link-form">
         <input type="text" id="title" maxlength="12" placeholder="Title" />
         <input type="text" id="url" value="https://" />
-        <select id="menu-select"></select>
-        <select type="text" id="custom-category-name">
-          <option value="Downloads">Downloads</option>
-          <option value="Stream">Stream</option>
-          <option value="Social">Social</option>
-          <option value="Reddit">Reddit</option>
-          <option value="Code">Code</option>
-          <option value="News">News</option>
-          <option value="Cloud">Cloud</option>
-          <option value="More">More</option>
-        </select>
         <button id="add">Save</button>
         <input type="color" id="custom-category-color" />
       </div>
     </div>
     <div id="leftsidemenu"><span class="sidenavhome" onMouseOver="openNav()"><a href="javascript:void(0);" onclick="openNav()">&#9776;</a></span></div>
-    <div class="weboasislogo"><img src="media/logo.svg" alt="Logo"></div>
+    <div class="weboasislogo"><img src="media/logo.jpg" alt="Logo"></div>
     <div class="center-flex offset-25" id="defaultSearchModule">
       <div class="container" id="mainContainer">
       <div class="container container-search" id="searchContainer">
@@ -211,14 +180,7 @@
         <div class="container container-menu" id="menuContainer">
           <ul onclick="javascript:void(0);" class="menu-category" id="categoryMenu"></ul>
         </div>
-      </div>
-    </div>
-    <div class="left-flex offset-27">
-      <button id="switchSearch" onclick="switchSearch();">
-        <div>
-			<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;padding-right:0.2em;padding-top:0.2em;" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M19.77 36.74L1.57 54.81A5.39 5.39 0 005.42 64c1.44 0 2.81-.57 3.83-1.58l18.2-18.07c-.03-.01-2.27-1.46-4.27-3.44a31.8 31.8 0 01-3.4-4.17zM41.63 0C29.36 0 19.26 10.03 19.26 22.22c0 12.18 10.1 22.21 22.37 22.21C53.9 44.43 64 34.4 64 22.22 64 10.02 53.9 0 41.63 0zm-.02 4.97h.02C51.16 4.97 59 12.76 59 22.22s-7.83 17.24-17.36 17.24a17.38 17.38 0 01-17.36-17.24c0-9.45 7.82-17.23 17.34-17.25z" fill="#02abff" fill-rule="nonzero"/></svg>
-        </div>
-      </button>
+      </div>>
     </div>
     <div class="left-flex offset-28">
       <button id="switchSearch" onclick="event.stopPropagation();openSecretMenuOne();">
@@ -261,9 +223,6 @@
     <div id="secretMenu" class="modal">
       <div id="secretList"></div>
     </div>
-    <div id="chatContainer">
-      <a href="https://chatte.rs" target="_blank" id="chat"></a>
-    </div>
     <script type="text/javascript" language="javascript">
       document.addEventListener("DOMContentLoaded", function () {
         init();
@@ -271,9 +230,9 @@
     </script>
     <script type="text/javascript" language="javascript">
         Toastify({
-          text: "⭐ Contact Me",
+          text: "⭐ Visit Wiki",
           duration: 15000,
-          destination: "https://t.me/dprb47",
+          destination: "https://libreddit.dothq.co/r/FREEMEDIAHECKYEAH/wiki/index",
           newWindow: true,
           gravity: "bottom",
           position: "center",
